@@ -11,8 +11,8 @@ import javax.persistence.*;
  * @create 2022-09-20 18:19
  **/
 @Entity
-@Data
-@AllArgsConstructor
+@Getter
+@Setter
 @NoArgsConstructor
 public class UserRole {
 
@@ -21,11 +21,9 @@ public class UserRole {
     private Long userRoleId;
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "userId", referencedColumnName = "userId")
     private User user;
 
     @ManyToOne
-    @JoinColumn(name = "roleId", referencedColumnName = "roleId")
     private Role role;
 
 }

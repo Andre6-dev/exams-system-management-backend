@@ -13,9 +13,9 @@ import java.util.Set;
  * @create 2022-09-20 18:18
  **/
 @Entity
-@Data
-@AllArgsConstructor
 @NoArgsConstructor
+@Getter
+@Setter
 public class Role {
 
     @Id

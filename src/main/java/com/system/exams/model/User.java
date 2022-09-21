@@ -12,10 +12,10 @@ import java.util.Set;
  * @author Andre Gallegos
  * @create 2022-09-20 17:47
  **/
-@Entity
-@Data
-@AllArgsConstructor
 @NoArgsConstructor
+@Getter
+@Setter
+@Entity
 public class User {
 
     @Id
